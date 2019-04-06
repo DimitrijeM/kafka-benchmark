@@ -87,7 +87,10 @@ Finally, download test data from [link](http://tx.tamedia.ch.s3.amazonaws.com/ch
 ```
 zcat stream.gz | kafka-console-producer --broker-list localhost:9092 --topic in
 ```
-
+The app uses this data, so it is necessary to extract the file into a subdirectory within the project:
+```
+zcat stream.jsonl.gz > /path-to-project-directory/kafka-benchmark/data/stream.jsonl
+```
 
 ## Running the app
 
@@ -122,6 +125,7 @@ The report is written in the Jupiter Notebook and you can access it [here](). If
 
 ```
 source env/bin/activate
+ipython kernel install --user --name=env
 jupyter notebook kafka_benchmark_report.ipynb
 ```
 

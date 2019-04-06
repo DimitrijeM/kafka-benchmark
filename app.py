@@ -49,5 +49,5 @@ if __name__ == '__main__':
     print('Hello TDA team, welcome!')
     # benchmark_kafka_clients(input_topic, output_topic, msg_size, stats_file_path, fig_path)
     group_id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
-
+    print('Reading messages started')
     read_messages_and_count_users(input_topic, output_topic, group_id)
