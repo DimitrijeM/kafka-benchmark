@@ -121,7 +121,7 @@ python app.py
 
 With the application comes a report explaining how I decided to implement the solution in this way. It contains benchmark of various Kafka clients, data structures, and counting mechanisms.
 
-The report is written in the Jupiter Notebook and you can access it [here](). If you want to run a code in notebook, you can do this by running a notebook in a virtual environment:
+The report is written in the Jupiter Notebook and you can access it [here](https://github.com/DimitrijeM/kafka-benchmark/blob/master/kafka_benchmark_report.ipynb). If you want to run a code in notebook, you can do this by running a notebook in a virtual environment:
 
 ```
 source env/bin/activate
